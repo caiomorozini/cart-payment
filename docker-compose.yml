@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  postgresql:
+    image: postgres:alpine
+    container_name: cartme-payments-postgres
+    environment:
+      - POSTGRES_DB=cartme_payments_dev
+      - POSTGRES_PASSWORD=development
+    ports:
+      - 5432:5432
+    volumes:
+      - cartme_payments_psql:/var/lib/postgresql/data
+volumes:
+  cartme_payments_psql:

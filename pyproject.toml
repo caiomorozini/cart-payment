@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "fast_api_test"
+version = "0.1.0"
+description = ""
+authors = ["Caio Morozini <caio@infranology.com.br>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.68.1"
+uvicorn = {extras = ["standard"], version = "^0.15.0"}
+SQLAlchemy = "^1.4.25"
+databases = {extras = ["sqlite"], version = "^0.5.2"}
+pytest = "^6.2.5"
+requests = "^2.26.0"
+pendulum = "^2.1.2"
+python-multipart = "^0.0.5"
+asyncpg = "^0.24.0"
+psycopg2-binary = "^2.9.1"
+pytest-asyncio = "^0.16.0"
+asgi-lifespan = "^1.0.1"
+httpx = "^0.20.0"
+alembic = "^1.7.4"
+future = "^0.18.2"
+trio = "^0.19.0"
+cieloApi3-py3 = "^0.1.6"
+cieloApi3 = "^0.1.5"
+SQLAlchemy-Utils = "^0.37.9"
+sqlalchemy-utils = {git = "https://github.com/kvesteri/sqlalchemy-utils"}
+Faker = "^10.0.0"
+flake8 = "^4.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
